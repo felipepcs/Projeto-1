@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Projeto Individual TPA</title>
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <header>
+          <h1>Formulário corrida</h1>
+        </header>
+        <div class="input">
+          <label for="name">Nome:</label>
+          <input type="text" id="name" placeholder="Digite seu nome" />
+        </div>
+<br>
+        <div class="input">
+          <label for="weight">Peso: </label>
+          <input type="number" id="weight" placeholder="Digite seu peso (kg)" step="0.01" />
+        </div>
+<br>
+        <div class="input">
+          <label for="distance">Distância: </label>
+          <input
+            type="number"
+            id="distance"
+            placeholder="Digite a distância percorrida (km)"
+            step="0.01"
+          />
+        </div>
+<br>
+        <div class="input">
+          <label for="time">Tempo gasto: </label>
+          <input type="time" id="time" step="1" />
+        </div>
+        <div class="buttons">
+          <button type="button" id="calculate">Calcular</button>
+        </div>
+
+        <div class="result" id="resultado">
+          <h4 class="resultName" id="resultName"></h4>
+          <p class="resultText" id="resultText"></p>
+          <p class="resultIdealWeigth" id="resultIdealWeigth"></p>
+        </div>
+        <footer>
+          <p>Projeto Individual TPA</p>
+        </footer>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
